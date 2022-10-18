@@ -40,6 +40,7 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  align-content: center;
 }
 
 .item {
@@ -47,9 +48,16 @@ main img {
   margin: 10px;
 }
 
+.item-centered {
+  margin: 10px;
+  align-self: center;
+}
+
 .item-double {
   flex: 2;
 }
+
+
 
 /* -------  Navigation ------- */
 
@@ -135,3 +143,26 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  header nav {
+    margin-right: 15px;
+  }
+
+  .logo {
+    padding: 5px;
+    font-size: 30px;
+    padding-top: 10px;
+    margin-right: 10px;
+  }
+
+  .group {
+    flex-direction: row;
+    flex-flow: row wrap;
+  }
+}
