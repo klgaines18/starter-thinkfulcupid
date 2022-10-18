@@ -65,14 +65,30 @@ header {
   color: #ecdbc9;
 }
 
-header nav ul li {
-  list-style-type: none;
+header nav {
+  display: flex;
+  justify-content: center;
+  
 }
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* header nav ul li {
+  list-style-type: none;
+} */
 
 header nav ul li a {
   color: #ecdbc9;
   text-decoration: none;
   padding: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  padding-right: 0;
 }
 
 header nav ul li a:hover {
